@@ -20,14 +20,14 @@ public class InterfaceTest {
         formula.sqrt(16);           //
     }
 
+    @Test
     public void interfaceFunctionalInterface() {
         Converter<String, Integer> converter = (from) -> Integer.valueOf(from);
         Integer converted = converter.convert("123");
         System.out.println(converted);    // 123
     }
 
-
-    // uteis
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
     public interface Formula {
         double calculate(int a);
 

@@ -15,7 +15,7 @@ public class ConcurrentTest
 {
 	ExecutorService executor = Executors.newFixedThreadPool(2);
 
-	//
+	// atomic
 	private static AtomicInteger atomicInt = new AtomicInteger(0);
 
 	@Test
@@ -47,6 +47,8 @@ public class ConcurrentTest
 
 	}
 
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	private static int count = 0;
 
 	private static void incrementSync()
@@ -56,8 +58,6 @@ public class ConcurrentTest
 			count = count + 1;
 		}
 	}
-
-	/////////////////////////////////
 
 	public void stop(ExecutorService executor)
 	{

@@ -21,6 +21,8 @@ public class MethodReferenceTest {
         cars.forEach( police::follow );
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public static class Car {
         public static Car create(final Supplier<Car> supplier) {
             return supplier.get();

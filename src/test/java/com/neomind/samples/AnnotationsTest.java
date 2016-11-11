@@ -14,6 +14,8 @@ import java.util.Collection;
 @RunWith(JUnit4.class)
 public class AnnotationsTest
 {
+	// novidade na criação de anotações agora possibilitadno anotar variaveis locais, tipos genericos, super classes
+	// etc
 	@Test
 	public void doTest()
 	{
@@ -22,7 +24,7 @@ public class AnnotationsTest
 
 	}
 
-	///////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target({ ElementType.TYPE_USE, ElementType.TYPE_PARAMETER })
 	public @interface NonEmpty

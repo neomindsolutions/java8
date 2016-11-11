@@ -15,6 +15,8 @@ public class ParameterNamesTest {
         methodWithParams(null);
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public void methodWithParams(String[] args) throws Exception {
         Method method = ParameterNamesTest.class.getMethod("methodWithParams", String[].class);
         for (final Parameter parameter : method.getParameters()) {

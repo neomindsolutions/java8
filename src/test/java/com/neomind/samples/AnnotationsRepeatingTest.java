@@ -10,6 +10,7 @@ import java.lang.annotation.*;
 public class AnnotationsRepeatingTest
 {
 
+	// possibilita usar a mesma anotação repetidamente // ex @Filter
 	@Test
 	public void repeatingTest()
 	{
@@ -18,6 +19,8 @@ public class AnnotationsRepeatingTest
 			System.out.println(filter.value());
 		}
 	}
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	@Target(ElementType.TYPE)
 	@Retention(RetentionPolicy.RUNTIME)
