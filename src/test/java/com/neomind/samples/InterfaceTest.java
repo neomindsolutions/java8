@@ -16,8 +16,8 @@ public class InterfaceTest {
             }
         };
 
-        formula.calculate(100);     // 100.0
-        formula.sqrt(16);           //
+        System.out.println(formula.calculate(100));     // 100.0
+        System.out.println(formula.sqrt(16));           //
     }
 
     @Test
